@@ -1,0 +1,13 @@
+.login {
+  background: #242424;
+  width: 100%;
+  height: 1000px;
+  margin: 0;
+  padding: 0;
+}
+.botao {
+  background-color: #f6f6f6;
+  color: #242424;
+  border: none;
+  align-items: center;
+}
