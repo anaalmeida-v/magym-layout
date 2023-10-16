@@ -1,0 +1,23 @@
+*{
+  align-items: center;
+  text-align: center;
+}
+h2{
+  margin-top: 15%;
+  font-size: 28.9px;
+}
+
+.btn {
+  margin-top: 10%;
+  background: #d5342a;
+  width: 20%;
+  border-radius: 20px;
+  margin-left: 20PX;
+  color: #f6f6f6;
+  font-size: 14px;
+}
+.btn:hover{
+  background-color: #f4594e;
+  color: #f6f6f6;
+  border: none;
+}

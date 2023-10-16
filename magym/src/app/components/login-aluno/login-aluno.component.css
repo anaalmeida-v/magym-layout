@@ -1,0 +1,51 @@
+* {
+  color: #242424;
+  margin: auto;
+  text-align: center;
+}
+.login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+a {
+  text-decoration: none;
+}
+.icon {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+.rm {
+  position: relative;
+}
+input {
+  padding-left: 20px;
+  border-radius: 20px;
+  background-color: #f6f6f6;
+  border: none;
+  height: 40px;
+}
+.input:focus {
+  transform: none;
+  background-color: #f6f6f6;
+}
+.esquecisenha {
+  font-size: 10px;
+}
+.btn {
+  margin-top: 10%;
+  background: #d5342a;
+  width: 20%;
+  border-radius: 20px;
+  margin-left: 20px;
+  color: #f6f6f6;
+  font-size: 14px;
+}
+.btn:hover {
+  background-color: #f4594e;
+  color: #f6f6f6;
+  border: none;
+}
