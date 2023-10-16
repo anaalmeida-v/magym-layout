@@ -1,0 +1,9 @@
+*{  font-family: "Inter", sans-serif;
+}
+button {
+  background-color: #d5342a;
+  border-radius: 10px;
+}
+.usuario{
+  align-items: center;
+}

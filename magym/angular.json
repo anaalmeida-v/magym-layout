@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "MAGYM": {
+    "magym": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -60,10 +60,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "MAGYM:build:production"
+              "browserTarget": "magym:build:production"
             },
             "development": {
-              "browserTarget": "MAGYM:build:development"
+              "browserTarget": "magym:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -71,7 +71,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "MAGYM:build"
+            "browserTarget": "magym:build"
           }
         },
         "test": {
