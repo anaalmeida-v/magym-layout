@@ -1,0 +1,40 @@
+.cadastroaluno {
+  background-image: url(../../../assets/fundo_cadastro.svg) fixed no-repeat;
+  height: 100%;
+  text-align: center;
+}
+* {
+  color: #242424;
+}
+a {
+  text-decoration: none;
+}
+.tituloPrincipal {
+  margin-top: 10%;
+}
+.lembrarSenha input {
+  align-items: start;
+}
+.btn {
+  background: #d5342a;
+  width: 20%;
+  border-radius: 20px;
+  margin-left: 20px;
+  color: #f6f6f6;
+  font-size: 14px;
+}
+.btn:hover {
+  background-color: #f4594e;
+  color: #f6f6f6;
+  border: none;
+}
+
+.entradaDados {
+  text-align: start;
+  padding-left: 3%;
+  border-radius: 50px;
+  background-color: #f6f6f6;
+  border: none;
+  height: 45px;
+  margin: 10px;
+}
