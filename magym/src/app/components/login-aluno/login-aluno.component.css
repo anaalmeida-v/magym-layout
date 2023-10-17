@@ -3,11 +3,11 @@
   margin: auto;
   text-align: center;
 }
-.login {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+
+h2{
+  margin-top: 10%;
 }
+
 a {
   text-decoration: none;
   font-size: 14px;
@@ -16,31 +16,32 @@ a {
   width: 15px;
   height: 15px;
   position: absolute;
-  margin-top: 5px;
-  margin-left: 5px;
+  margin-top: 2%;
+  margin-left: 2%;
 }
+
 .rm {
   position: relative;
 }
-input {
-  padding-left: 1%;
-  border-radius: 20px;
+.entradaDados {
+  text-align: start;
+  padding-left: 3%;
+  border-radius: 50px;
   background-color: #f6f6f6;
   border: none;
-  height: 40px;
+  height: 45px;
+  margin: 10px;
 }
 .input:focus {
   transform: none;
   background-color: #f6f6f6;
 }
-.btn {
-  margin-top: 10%;
+.btn{
   background: #d5342a;
   width: 20%;
   border-radius: 20px;
   margin-left: 20px;
   color: #f6f6f6;
-  text-align: start;
   font-size: 14px;
 }
 .btn:hover {

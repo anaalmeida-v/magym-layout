@@ -1,24 +1,30 @@
-<div class="loginA row d-flex">
+<div class="container align-self-center">
   <form class="form-group">
     <h2>Login</h2>
-    <h4>Aluno</h4>
-    <div class="rm form-group">
+    <h4 class="mb-4">Aluno</h4>
+    <div class="rm">
       <img class="icon" src="../../../assets/user_icon.svg" />
-      <input type="text" placeholder="Digite seu RM" />
+      <input class="entradaDados" type="text" placeholder="Digite seu RM" />
     </div>
-    <div class="rm form-group">
+    <div class="rm">
       <img class="icon" src="../../../assets/lock_icon.svg" />
-      <input type="text" placeholder="Senha" />
+      <input class="entradaDados" type="text" placeholder="Senha" />
+    </div>
+    <div class="row">
+      <div class="col-sm-4"></div>
+      <div class="col-sm-3">
+        <label class="radio-inline">
+          <input class="mr-2" type="checkbox" />Lembrar senha</label
+        >
+      </div>
+      <div class="col-sm-2">
+        <a href="">Esqueci minha senha</a>
+      </div>
+      <div class="col-sm-3"></div>
+    </div>
+    <div>
+      <button class="btn" placeholder="Login">Login</button>
+      <!--<a href="">Não possui conta? Cadastre-se</a>-->
     </div>
   </form>
-  <div class="form-group">
-    <form class="form-group">
-      <input type="checkbox" name="lembrarsenha" />Lembrar senha
-      <a href="">Esqueci minha senha</a>
-    </form>
-    <form class="form-group">
-      <button type="button" class="btn" placeholder="Login">Login</button>
-      <a href="">Não possui conta? Cadastre-se</a>
-    </form>
-  </div>
 </div>
