@@ -10,6 +10,7 @@
 }
 a {
   text-decoration: none;
+  font-size: 14px;
 }
 .icon {
   width: 15px;
@@ -22,7 +23,7 @@ a {
   position: relative;
 }
 input {
-  padding-left: 20px;
+  padding-left: 1%;
   border-radius: 20px;
   background-color: #f6f6f6;
   border: none;
@@ -32,9 +33,6 @@ input {
   transform: none;
   background-color: #f6f6f6;
 }
-.esquecisenha {
-  font-size: 10px;
-}
 .btn {
   margin-top: 10%;
   background: #d5342a;
@@ -42,6 +40,7 @@ input {
   border-radius: 20px;
   margin-left: 20px;
   color: #f6f6f6;
+  text-align: start;
   font-size: 14px;
 }
 .btn:hover {
