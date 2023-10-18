@@ -8,6 +8,8 @@ import { LoginAlunoComponent } from './components/login-aluno/login-aluno.compon
 import { LoginIntegranteAPMComponent } from './components/login-integrante-apm/login-integrante-apm.component';
 import { CadastroAlunoComponent } from './components/cadastro-aluno/cadastro-aluno.component';
 import { CadastroIntegranteApmComponent } from './components/cadastro-integrante-apm/cadastro-integrante-apm.component';
+import { EsqueceuSenhaComponent } from './components/esqueceu-senha/esqueceu-senha.component';
+import { ResetarSenhaComponent } from './components/resetar-senha/resetar-senha.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { CadastroIntegranteApmComponent } from './components/cadastro-integrante
     LoginAlunoComponent,
     LoginIntegranteAPMComponent,
     CadastroAlunoComponent,
-    CadastroIntegranteApmComponent
+    CadastroIntegranteApmComponent,
+    EsqueceuSenhaComponent,
+    ResetarSenhaComponent
   ],
   imports: [
     BrowserModule,
