@@ -10,6 +10,8 @@ import { CadastroAlunoComponent } from './components/cadastro-aluno/cadastro-alu
 import { CadastroIntegranteApmComponent } from './components/cadastro-integrante-apm/cadastro-integrante-apm.component';
 import { EsqueceuSenhaComponent } from './components/esqueceu-senha/esqueceu-senha.component';
 import { ResetarSenhaComponent } from './components/resetar-senha/resetar-senha.component';
+import { CompraUniformesComponent } from './components/compra-uniformes/compra-uniformes.component';
+import { AluguelArmariosComponent } from './components/aluguel-armarios/aluguel-armarios.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { ResetarSenhaComponent } from './components/resetar-senha/resetar-senha.
     CadastroAlunoComponent,
     CadastroIntegranteApmComponent,
     EsqueceuSenhaComponent,
-    ResetarSenhaComponent
+    ResetarSenhaComponent,
+    CompraUniformesComponent,
+    AluguelArmariosComponent
   ],
   imports: [
     BrowserModule,
