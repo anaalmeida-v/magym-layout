@@ -1,17 +1,15 @@
 .cadastroaluno {
-  background-image: url(../../../assets/fundo_cadastro.svg) fixed no-repeat;
-  height: 100%;
   text-align: center;
-}
-* {
   color: #242424;
-}
-a {
-  text-decoration: none;
+  height: 100vh;
 }
 .tituloPrincipal {
-  margin-top: 10%;
+  margin-top: 100px;
 }
-.lembrarSenha input {
-  align-items: start;
+.lembrarsenha{
+  text-align: end;
+  margin-right: 40%;
+}
+.lembrarsenha label{
+  margin-left: 5px;
 }

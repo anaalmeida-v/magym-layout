@@ -1,22 +1,15 @@
-.cadastrointegrante {
-  background: #242424;
-  background-size: 100%;
-  box-sizing: border-box;
-  background-repeat: no-repeat;
-  height: 100%;
-  padding: 100px 0;
+.cadastroaluno {
   text-align: center;
-}
-* {
-  color: #f6f6f6;
-}
-a {
-  text-decoration: none;
+  color: #242424;
+  height: 100vh;
 }
 .tituloPrincipal {
-  margin-top: 10%;
+  margin-top: 100px;
 }
-#lembrarSenha input {
-  text-align: start;
-  color: #242424;
+.lembrarsenha {
+  text-align: end;
+  margin-right: 40%;
+}
+.lembrarsenha label {
+  margin-left: 5px;
 }

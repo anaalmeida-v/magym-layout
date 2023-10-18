@@ -1,25 +1,14 @@
-
-* {
-  color: #242424;
-  margin: auto;
+.loginintegranteapm {
+  height: 100vh;
+}
+h2 {
+  margin-top: 150px;
+}
+form {
   text-align: center;
 }
-
-h2{
-  margin-top: 10%;
-}
-
-a {
-  font-size: 14px;
-}
-.icon {
-  width: 15px;
-  height: 15px;
-  position: absolute;
-  margin-top: 2%;
-  margin-left: 2%;
-}
-
-.rm {
-  position: relative;
+.entradaDados {
+  height: 45px;
+  margin: 10px;
+  text-align: start;
 }

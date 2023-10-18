@@ -1,7 +1,14 @@
+a,
+label {
+  text-decoration: none;
+  font-size: 14px;
+  color: #242424;
+  margin-top: 10px;
+}
 .btn {
-  margin: 5% 0 2% 2%;
+  margin: 30px 0 20px 0;
   background: #d5342a;
-  width: 20%;
+  width: 200px;
   border-radius: 20px;
   color: #f6f6f6;
   font-size: 14px;
@@ -10,16 +17,24 @@
 .btn:hover {
   background-color: #f4594e;
 }
+input[type="checkbox"] {
+  margin-top: 12px;
+}
 .entradaDados {
   text-align: start;
-  padding-left: 3%;
+  padding: 0 4% 0 40px;
   border-radius: 50px;
   background-color: #f6f6f6;
   border: none;
+  margin: 2% 0 0 0;
   height: 45px;
-  margin: 10px;
 }
-.input:focus {
-  transform: none;
-  background-color: #f6f6f6;
+.entradaDados:focus {
+  border: none;
+}
+.icon {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  margin: 25px 0 0 20px;
 }

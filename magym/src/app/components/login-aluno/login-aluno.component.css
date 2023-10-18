@@ -1,37 +1,14 @@
-* {
-  color: #242424;
-  margin: auto;
+.loginaluno {
+  height: 100vh;
+}
+h2 {
+  margin-top: 150px;
+}
+form {
   text-align: center;
 }
-
-h2{
-  margin-top: 10%;
-}
-
-a {
-  font-size: 14px;
-}
-.icon {
-  width: 15px;
-  height: 15px;
-  position: absolute;
-  margin-top: 2%;
-  margin-left: 2%;
-}
-
-.rm {
-  position: relative;
-}
 .entradaDados {
-  text-align: start;
-  padding-left: 3%;
-  border-radius: 50px;
-  background-color: #f6f6f6;
-  border: none;
   height: 45px;
   margin: 10px;
-}
-.input:focus {
-  transform: none;
-  background-color: #f6f6f6;
+  text-align: start;
 }

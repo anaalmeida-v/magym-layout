@@ -1,0 +1,18 @@
+.esqueceusenha {
+  background: #242424;
+  color: #f6f6f6;
+  height: 100vh;
+}
+* {
+  text-align: center;
+}
+.titulo {
+  padding: 200px 0 2% 0;
+}
+.botaoesqueceusenha{
+  background-color: #242424;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  height:30px;
+  text-align: start;
+}
