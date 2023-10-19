@@ -1,10 +1,4 @@
-a,
-label {
-  text-decoration: none;
-  font-size: 14px;
-  color: #242424;
-  margin-top: 10px;
-}
+/*padrão botão*/
 .btn {
   margin: 30px 0 20px 0;
   background: #d5342a;
@@ -17,9 +11,20 @@ label {
 .btn:hover {
   background-color: #f4594e;
 }
+
+/*input forms*/
+a,
+label {
+  text-decoration: none;
+  font-size: 14px;
+  color: #242424;
+  margin-top: 10px;
+}
+
 input[type="checkbox"] {
   margin-top: 12px;
 }
+
 .entradaDados {
   text-align: start;
   padding: 0 4% 0 40px;
@@ -29,12 +34,22 @@ input[type="checkbox"] {
   margin: 2% 0 0 0;
   height: 45px;
 }
+
 .entradaDados:focus {
   border: none;
 }
+
 .icon {
   width: 15px;
   height: 15px;
   position: absolute;
   margin: 25px 0 0 20px;
+}
+/*NAVBAR*/
+.icon-navbar {
+  width: 20px;
+  position: absolute;
+}
+.nav-link{
+  position: relative;
 }
