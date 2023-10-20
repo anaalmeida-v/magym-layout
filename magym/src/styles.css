@@ -35,6 +35,14 @@ input[type="checkbox"] {
   height: 45px;
 }
 
+.cadastro {
+  margin: 5px;
+}
+
+.tituloPrincipal {
+  margin-top: 3%;
+}
+
 .entradaDados:focus {
   border: none;
 }
@@ -46,10 +54,16 @@ input[type="checkbox"] {
   margin: 25px 0 0 20px;
 }
 /*NAVBAR*/
-.icon-navbar {
-  width: 20px;
+.icon-menu {
+  width: 15px;
   position: absolute;
 }
-.nav-link{
+.menu-padrao a,
+strong {
+  font-size: 14px;
+}
+.nav-link,
+strong {
+  text-align: center;
   position: relative;
 }
