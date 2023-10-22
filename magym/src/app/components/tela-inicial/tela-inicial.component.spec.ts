@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { EsqueceuSenhaComponent } from './esqueceu-senha.component';
+import { TelaInicialComponent } from './tela-inicial.component';
 
-describe('EsqueceuSenhaComponent', () => {
-  let component: EsqueceuSenhaComponent;
-  let fixture: ComponentFixture<EsqueceuSenhaComponent>;
+describe('TelaInicialComponent', () => {
+  let component: TelaInicialComponent;
+  let fixture: ComponentFixture<TelaInicialComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ EsqueceuSenhaComponent ]
+      declarations: [ TelaInicialComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(EsqueceuSenhaComponent);
+    fixture = TestBed.createComponent(TelaInicialComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

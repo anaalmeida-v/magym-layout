@@ -1,0 +1,41 @@
+.tela-inicial {
+  height: 100vh;
+  background-color: #242424;
+  text-align: center;
+  color: #f6f6f6;
+  margin: auto;
+}
+.padrao {
+  width: 100px;
+}
+.titulo {
+  padding-bottom:100px;
+  padding-top: 15%;
+}
+.comprauniforme{
+  align-self: start;
+  margin: 0 10% 0 20%;
+}
+.alugaarmario{
+  align-self: end;
+}
+.item-inicio{
+  border:2px solid #fff ;
+  border-radius: 10px;
+  width: 25%;
+  padding-bottom: 20px;
+}
+.item-inicio:hover{
+  background-color: #ccc;
+}
+a:hover{
+  color: #242424;
+}
+.paragrafoinicio{
+  padding-bottom: 10px;
+  padding-top: 25px;
+}
+a{
+  font-weight: 500;
+  color: #f6f6f6;
+}

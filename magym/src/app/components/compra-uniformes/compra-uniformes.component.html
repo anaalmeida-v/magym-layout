@@ -1,7 +1,7 @@
 <div class="pagina-uniforme">
   <nav class="navbar navbar-expand-lg navbar-light bg-light menu-padrao">
     <div class="container-fluid">
-      <a class="navbar-brand" routerLink="/usuario">UNIFORMES</a>
+      <a class="navbar-brand" [routerLink]="['#inicio']">UNIFORMES</a>
       <button
         class="navbar-toggler"
         type="button"
@@ -13,13 +13,24 @@
       >
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <div
+        class="collapse navbar-collapse justify-content-end menu"
+        id="navbarNav"
+      >
+        <div class="row home">
+          <div class="col-sm-1 col-md-2">
+            <img class="icon-menu" src="../../../assets/icon-home.svg" />
+          </div>
+          <div class="col-sm-9 col-md-8">
+            <a [routerLink]="['/']">Home</a>
+          </div>
+        </div>
         <div class="row">
           <div class="col-sm-1 col-md-2 mt-lg-2">
             <img class="icon-menu" src="../../../assets/user_icon.svg" />
           </div>
           <div class="col-sm-9 col-md-8">
-            <a href="">Entre ou Cadastre-se</a>
+            <a [routerLink]="['/usuario']">Entre ou Cadastre-se</a>
           </div>
         </div>
         <div class="row">
@@ -36,24 +47,24 @@
   </nav>
   <div>
     <section class="inicio d-flex justify-content-center">
-      <div class="container align-self-center">
-        <h1>Escolha o uniforme de sua preferência:</h1>
+      <div class="container align-self-center" id="inicio">
         <div class="row">
-          <div class="col-6 feminino">
-            <h4>FEMININO</h4>
+          <h1>Escolha o uniforme de sua preferência:</h1>
+          <div class="col-sm-12 col-md-6 feminino">
+            <h4 class="mt-5">FEMININO</h4>
             <a href="#secao2"
               ><img
                 class="imagens-uniforme"
-                src="../../../assets/camisa-uniforme.svg"
+                src="../../../assets/icon-feminino.svg"
                 alt=""
             /></a>
           </div>
-          <div class="col-6 masculino">
-            <h4>MASCULINO</h4>
+          <div class="col-sm-12 col-md-6 masculino">
+            <h4 class="mt-5">MASCULINO</h4>
             <a href="#secao3"
               ><img
                 class="imagens-uniforme"
-                src="../../../assets/camisa-uniforme.svg"
+                src="../../../assets/icon-masculino.svg"
                 alt=""
             /></a>
           </div>
@@ -61,7 +72,7 @@
       </div>
     </section>
     <section id="secao2">
-      <div class="bg-dark">
+      <div>
         <div id="carouselExampleIndicators" class="carousel slide">
           <div class="carousel-indicators">
             <button
@@ -83,7 +94,7 @@
             <div class="carousel-inner carousel-ajuste">
               <div class="carousel-item active">
                 <div class="row">
-                  <div class="col-6">
+                  <div class="col-sm-12 col-md-6">
                     <img
                       src="../../../assets/camisa-uniforme.svg"
                       class="imagens-uniforme"
@@ -91,7 +102,7 @@
                     />
                     <p>CALÇA FEMININA</p>
                   </div>
-                  <div class="col-6">
+                  <div class="col-sm-12 col-md-6">
                     <img
                       src="../../../assets/camisa-uniforme.svg"
                       class="imagens-uniforme"
@@ -103,7 +114,7 @@
               </div>
               <div class="carousel-item">
                 <div class="row">
-                  <div class="col-6">
+                  <div class="col-sm-12 col-md-6">
                     <img
                       src="../../../assets/camisa-uniforme.svg"
                       class="imagens-uniforme"
@@ -111,7 +122,7 @@
                     />
                     <p>MOLETOM COM CAPUZ</p>
                   </div>
-                  <div class="col-6">
+                  <div class="col-sm-12 col-md-6">
                     <img
                       src="../../../assets/camisa-uniforme.svg"
                       class="imagens-uniforme"
@@ -119,7 +130,7 @@
                     />
                     <p>BERMUDA FEMININA</p>
                   </div>
-                  <div class="col-6">
+                  <div class="col-sm-12 col-md-6">
                     <img
                       src="../../../assets/camisa-uniforme.svg"
                       class="imagens-uniforme"
@@ -153,7 +164,7 @@
       </div>
     </section>
     <section id="secao3">
-      <div class="bg-dark">
+      <div>
         <div id="carouselExampleIndicator" class="carousel slide">
           <div class="carousel-indicators">
             <button
@@ -175,7 +186,7 @@
             <div class="carousel-inner carousel-ajuste">
               <div class="carousel-item active">
                 <div class="row">
-                  <div class="col-6">
+                  <div class="col-sm-12 col-md-6">
                     <img
                       src="../../../assets/camisa-uniforme.svg"
                       class="imagens-uniforme"
@@ -183,7 +194,7 @@
                     />
                     <p>CALÇA FEMININA</p>
                   </div>
-                  <div class="col-6">
+                  <div class="col-sm-12 col-md-6">
                     <img
                       src="../../../assets/camisa-uniforme.svg"
                       class="imagens-uniforme"
@@ -195,7 +206,7 @@
               </div>
               <div class="carousel-item">
                 <div class="row">
-                  <div class="col-6">
+                  <div class="col-sm-12 col-md-6">
                     <img
                       src="../../../assets/camisa-uniforme.svg"
                       class="imagens-uniforme"
@@ -203,7 +214,7 @@
                     />
                     <p>CALÇA MASCULINA</p>
                   </div>
-                  <div class="col-6">
+                  <div class="col-sm-12 col-md-6">
                     <img
                       src="../../../assets/camisa-uniforme.svg"
                       class="imagens-uniforme"
@@ -239,28 +250,52 @@
     <footer>
       <div class="rodape">
         <div class="row">
-          <div class="col-6 rodapeinfo">
-            <h1></h1>
+          <div class="col-sm-12 col-md-6 rodapeinfo">
+            <h1>CONTATO</h1>
             <div class="row ml-2">
-              <div class="col-2">
-                <img src="../../../assets/telefone.svg" alt="" />
-                <p>Telefone:</p>
+              <div class="col-sm-1 col-md-2">
+                <img
+                  class="icons-rodape"
+                  src="../../../assets/icon-telefone.svg"
+                  alt=""
+                />
               </div>
-              <div class="col-8 mt-4">11 2905-1128</div>
+              <div class="col-4">
+                <p>Telefone: <span class="itens">11 2905-1128</span></p>
+              </div>
             </div>
             <div class="row ml-2">
-              <div class="col-2">
-                <img src="../../../assets/email.svg" alt="" />
-                <p>Emails:</p>
+              <div class="col-sm-1 col-md-2">
+                <img
+                  class="icons-rodape"
+                  src="../../../assets/icon-email.svg"
+                  alt=""
+                />
               </div>
-              <div class="col-8 mt-4">
-                <p>Diretoria:<a href="mailto:e064dir@cps.sp.gov.br"> e064dir@cps.sp.gov.br</a></p>
-                <p>Diretoria Administrativa:<a href="mailto:e064adm@cps.sp.gov.br"> e064adm@cps.sp.gov.br</a></p>
-                <p>Diretoria Acadêmica:<a href="mailto:e064acad@cps.sp.gov.br"> e064acad@cps.sp.gov.br</a></p>
+              <div class="col-8">
+                <p>Emails:</p>
+                <p class="emailfooter">
+                  Diretoria:
+                  <a class="itens" href="mailto:e064dir@cps.sp.gov.br">
+                    e064dir@cps.sp.gov.br</a
+                  >
+                </p>
+                <p class="emailfooter">
+                  Diretoria Administrativa:
+                  <a class="itens" href="mailto:e064adm@cps.sp.gov.br">
+                    e064adm@cps.sp.gov.br</a
+                  >
+                </p>
+                <p class="emailfooter">
+                  Diretoria Acadêmica:
+                  <a class="itens" href="mailto:e064acad@cps.sp.gov.br">
+                    e064acad@cps.sp.gov.br</a
+                  >
+                </p>
               </div>
             </div>
             <div>
-              <h4>Localização</h4>
+              <h4 class="mt-5">Localização</h4>
               <p>
                 Rua Alcântara, 113 - Vila Guilherme - CEP: 02110-010 - São
                 Paulo/SP
@@ -271,23 +306,38 @@
               <p>Seg. a Sex. das 08h às 17h</p>
             </div>
           </div>
-          <div class="col-6">
-            <h1>ACOMPANHE NAS REDES SOCIAIS</h1>
+          <div class="col-sm-12 col-md-6 rodape2">
+            <h1 >ACOMPANHE NAS REDES SOCIAIS</h1>
             <div class="row">
-              <div class="row">
-                <div class="col-2">
-                  <img src="../../../assets/instagram.svg" alt="" />
+              <div class="d-flex justify-content-end">
+                <div class="row instagram">
+                  <div class="col-5">
+                    <img
+                      class="icons-rodape"
+                      src="../../../assets/icon-instagram.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="col-5">
+                    <a href="https://www.instagram.com/etechoracio/" class="itens">@etechoracio</a>
+                  </div>
                 </div>
-                <div class="col-8">
-                  <p>@etechoracio</p>
-                </div>
-                <div class="col-2">
-                  <img src="../../../assets/instagram.svg" alt="" />
-                </div>
-                <div class="col-8">
-                  <p>@etechoracio</p>
+                <div class="row instagram">
+                  <div class="col-5">
+                    <img
+                      class="icons-rodape"
+                      src="../../../assets/icon-instagram.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="col-5">
+                    <a href="https://www.instagram.com/magym_has/" class="itens">@magym_has</a>
+                  </div>
                 </div>
               </div>
+            </div>
+            <div class="logorodape">
+              <img src="../ ../../../../assets/logomagym.jpeg" alt="">
             </div>
           </div>
         </div>
