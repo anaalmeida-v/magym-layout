@@ -1,36 +1,297 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#navbarNav"
-      aria-controls="navbarNav"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <strong>Olá, seja bem vindo!</strong>
-          <a
-            class="nav-link"
-            href="../usuario/"
-            aria-current="page"
-            ><img class="icon-menu" src="../../../assets/user_icon.svg" />Entre
-            ou Cadastre-se</a
-          >
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="" tabindex="-1" aria-current="page"
-            ><img class="icon-menu" src="../../../assets/sacola.svg" />Minha
-            Sacola</a
-          >
-        </li>
-      </ul>
+<div class="pagina-uniforme">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light menu-padrao">
+    <div class="container-fluid">
+      <a class="navbar-brand" routerLink="/usuario">UNIFORMES</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <div class="row">
+          <div class="col-sm-1 col-md-2 mt-lg-2">
+            <img class="icon-menu" src="../../../assets/user_icon.svg" />
+          </div>
+          <div class="col-sm-9 col-md-8">
+            <a href="">Entre ou Cadastre-se</a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-1 col-md-2 mt-lg-2">
+            <img class="icon-menu" src="../../../assets/sacola.svg" />
+          </div>
+          <div class="col-sm-9 col-md-8">
+            <a href="">Minha Sacola </a>
+            <a href=""><strong>R$ 0, 00</strong></a>
+          </div>
+        </div>
+      </div>
     </div>
+  </nav>
+  <div>
+    <section class="inicio d-flex justify-content-center">
+      <div class="container align-self-center">
+        <h1>Escolha o uniforme de sua preferência:</h1>
+        <div class="row">
+          <div class="col-6 feminino">
+            <h4>FEMININO</h4>
+            <a href="#secao2"
+              ><img
+                class="imagens-uniforme"
+                src="../../../assets/camisa-uniforme.svg"
+                alt=""
+            /></a>
+          </div>
+          <div class="col-6 masculino">
+            <h4>MASCULINO</h4>
+            <a href="#secao3"
+              ><img
+                class="imagens-uniforme"
+                src="../../../assets/camisa-uniforme.svg"
+                alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="secao2">
+      <div class="bg-dark">
+        <div id="carouselExampleIndicators" class="carousel slide">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+          </div>
+          <div class="container align-self-center">
+            <div class="carousel-inner carousel-ajuste">
+              <div class="carousel-item active">
+                <div class="row">
+                  <div class="col-6">
+                    <img
+                      src="../../../assets/camisa-uniforme.svg"
+                      class="imagens-uniforme"
+                      alt=""
+                    />
+                    <p>CALÇA FEMININA</p>
+                  </div>
+                  <div class="col-6">
+                    <img
+                      src="../../../assets/camisa-uniforme.svg"
+                      class="imagens-uniforme"
+                      alt=""
+                    />
+                    <p>CAMISETA</p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="col-6">
+                    <img
+                      src="../../../assets/camisa-uniforme.svg"
+                      class="imagens-uniforme"
+                      alt=""
+                    />
+                    <p>MOLETOM COM CAPUZ</p>
+                  </div>
+                  <div class="col-6">
+                    <img
+                      src="../../../assets/camisa-uniforme.svg"
+                      class="imagens-uniforme"
+                      alt=""
+                    />
+                    <p>BERMUDA FEMININA</p>
+                  </div>
+                  <div class="col-6">
+                    <img
+                      src="../../../assets/camisa-uniforme.svg"
+                      class="imagens-uniforme"
+                      alt=""
+                    />
+                    <p>MOLETOM</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+    <section id="secao3">
+      <div class="bg-dark">
+        <div id="carouselExampleIndicator" class="carousel slide">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicator"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicator"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+          </div>
+          <div class="container align-self-center">
+            <div class="carousel-inner carousel-ajuste">
+              <div class="carousel-item active">
+                <div class="row">
+                  <div class="col-6">
+                    <img
+                      src="../../../assets/camisa-uniforme.svg"
+                      class="imagens-uniforme"
+                      alt=""
+                    />
+                    <p>CALÇA FEMININA</p>
+                  </div>
+                  <div class="col-6">
+                    <img
+                      src="../../../assets/camisa-uniforme.svg"
+                      class="imagens-uniforme"
+                      alt=""
+                    />
+                    <p>CAMISETA MASCULINA</p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="col-6">
+                    <img
+                      src="../../../assets/camisa-uniforme.svg"
+                      class="imagens-uniforme"
+                      alt=""
+                    />
+                    <p>CALÇA MASCULINA</p>
+                  </div>
+                  <div class="col-6">
+                    <img
+                      src="../../../assets/camisa-uniforme.svg"
+                      class="imagens-uniforme"
+                      alt=""
+                    />
+                    <p>BERMUDA FEMININA</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicator"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicator"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="rodape">
+        <div class="row">
+          <div class="col-6 rodapeinfo">
+            <h1></h1>
+            <div class="row ml-2">
+              <div class="col-2">
+                <img src="../../../assets/telefone.svg" alt="" />
+                <p>Telefone:</p>
+              </div>
+              <div class="col-8 mt-4">11 2905-1128</div>
+            </div>
+            <div class="row ml-2">
+              <div class="col-2">
+                <img src="../../../assets/email.svg" alt="" />
+                <p>Emails:</p>
+              </div>
+              <div class="col-8 mt-4">
+                <p>Diretoria:<a href="mailto:e064dir@cps.sp.gov.br"> e064dir@cps.sp.gov.br</a></p>
+                <p>Diretoria Administrativa:<a href="mailto:e064adm@cps.sp.gov.br"> e064adm@cps.sp.gov.br</a></p>
+                <p>Diretoria Acadêmica:<a href="mailto:e064acad@cps.sp.gov.br"> e064acad@cps.sp.gov.br</a></p>
+              </div>
+            </div>
+            <div>
+              <h4>Localização</h4>
+              <p>
+                Rua Alcântara, 113 - Vila Guilherme - CEP: 02110-010 - São
+                Paulo/SP
+              </p>
+            </div>
+            <div>
+              <h4>Horário de atendimento</h4>
+              <p>Seg. a Sex. das 08h às 17h</p>
+            </div>
+          </div>
+          <div class="col-6">
+            <h1>ACOMPANHE NAS REDES SOCIAIS</h1>
+            <div class="row">
+              <div class="row">
+                <div class="col-2">
+                  <img src="../../../assets/instagram.svg" alt="" />
+                </div>
+                <div class="col-8">
+                  <p>@etechoracio</p>
+                </div>
+                <div class="col-2">
+                  <img src="../../../assets/instagram.svg" alt="" />
+                </div>
+                <div class="col-8">
+                  <p>@etechoracio</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
   </div>
-</nav>
+</div>

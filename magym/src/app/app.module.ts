@@ -1,7 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { UsuarioComponent } from './components/usuario/usuario.component';
 import { LoginAlunoComponent } from './components/login-aluno/login-aluno.component';
@@ -12,8 +10,19 @@ import { EsqueceuSenhaComponent } from './components/esqueceu-senha/esqueceu-sen
 import { ResetarSenhaComponent } from './components/resetar-senha/resetar-senha.component';
 import { CompraUniformesComponent } from './components/compra-uniformes/compra-uniformes.component';
 import { AluguelArmariosComponent } from './components/aluguel-armarios/aluguel-armarios.component';
+import { RouterModule, Routes } from '@angular/router';
+
+const appRoutes: Routes = [
+  { path: 'compra-uniformes', component: CompraUniformesComponent },
+  { path: 'usuario', component: UsuarioComponent },
+  // Outras rotas, se houver
+];
 
 @NgModule({
+  imports: [
+    // ... outros módulos
+    RouterModule.forRoot(appRoutes),
+  ],
   declarations: [
     AppComponent,
     UsuarioComponent,
@@ -24,13 +33,9 @@ import { AluguelArmariosComponent } from './components/aluguel-armarios/aluguel-
     EsqueceuSenhaComponent,
     ResetarSenhaComponent,
     CompraUniformesComponent,
-    AluguelArmariosComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
+    AluguelArmariosComponent,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
