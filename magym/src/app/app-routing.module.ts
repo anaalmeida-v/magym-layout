@@ -26,7 +26,7 @@ const routes: Routes = [
     component: CadastroIntegranteApmComponent,
   },
   { path: 'resetar-senha', component: ResetarSenhaComponent },
-  { path: 'tela-inicial', component: TelaInicialComponent },
+  { path: '', component: TelaInicialComponent },
 ];
 @NgModule({
   imports: [
