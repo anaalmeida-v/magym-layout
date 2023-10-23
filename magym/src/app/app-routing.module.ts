@@ -1,3 +1,4 @@
+import { AlugaArmarioBatCavernaComponent } from './components/aluga-armario-bat-caverna/aluga-armario-bat-caverna.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CompraUniformesComponent } from './components/compra-uniformes/compra-uniformes.component';
@@ -8,11 +9,14 @@ import { CadastroAlunoComponent } from './components/cadastro-aluno/cadastro-alu
 import { CadastroIntegranteApmComponent } from './components/cadastro-integrante-apm/cadastro-integrante-apm.component';
 import { ResetarSenhaComponent } from './components/resetar-senha/resetar-senha.component';
 import { TelaInicialComponent } from './components/tela-inicial/tela-inicial.component';
-import { AluguelArmariosComponent } from './components/aluguel-armarios/aluguel-armarios.component';
+import { LocalArmarioComponent } from './components/local-armario/local-armario.component';
+import { AlugaArmarioOficinaMecanicaComponent } from './components/aluga-armario-oficina-mecanica/aluga-armario-oficina-mecanica.component';
 
 const routes: Routes = [
   { path: 'compra-uniformes', component: CompraUniformesComponent },
-  { path: 'aluguel-armarios', component: AluguelArmariosComponent },
+  { path: 'local-armario', component: LocalArmarioComponent },
+  { path: 'aluga-armario-bat-caverna', component: AlugaArmarioBatCavernaComponent },
+  { path: 'aluga-armario-oficina-mecanica', component: AlugaArmarioOficinaMecanicaComponent },
   { path: 'usuario', component: UsuarioComponent },
   { path: 'login-aluno', component: LoginAlunoComponent },
   { path: 'login-integrante-apm', component: LoginIntegranteAPMComponent },
@@ -22,7 +26,7 @@ const routes: Routes = [
     component: CadastroIntegranteApmComponent,
   },
   { path: 'resetar-senha', component: ResetarSenhaComponent },
-  { path: '', component: TelaInicialComponent },
+  { path: 'tela-inicial', component: TelaInicialComponent },
 ];
 @NgModule({
   imports: [

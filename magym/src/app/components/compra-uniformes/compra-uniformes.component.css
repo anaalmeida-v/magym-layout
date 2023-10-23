@@ -14,14 +14,10 @@
   .inicio {
     height: 150vh;
   }
-  .rodape {
-    padding: 0 30px 0 30px;
-    text-align: start;
-    width: 100%;
-  }
-  #secao3 .imagens-uniforme, #secao2 .imagens-uniforme {
+  #secao3 .imagens-uniforme,
+  #secao2 .imagens-uniforme {
     height: 100vh;
-padding-top: 0;
+    padding-top: 0;
   }
 }
 .imagens-uniforme {
@@ -46,46 +42,14 @@ padding-top: 0;
   padding: 20px;
   border: none;
 }
-.rodapeinfo {
-  text-align: start;
-  padding-left: 10%;
-}
-.rodape2 {
-  text-align: end;
-  padding-right: 10%;
-}
-.rodape {
-  color: #f6f6f6;
-  background-color: #242424;
-  height: 150vh;
-  border-top: 2px solid #141313;
-  padding-top: 5%;
-}
-@media(max-width:770px){
-  .rodape2{
-    margin-top: 15vh;
-  }
-}
 #secao2,
 #secao3 {
   background-color: #242424;
   padding-top: 20vh;
 }
-.icons-rodape {
-  color: #fff;
-  width: 40px;
+.feminino img, .masculino img{
+  background-color: #333333;
 }
-
-.itens {
-  color: #938b8b;
-  font-weight: 900;
-  margin-right: 10px;
-}
-.instagram {
-  margin-top: 10px;
-}
-.logorodape img{
-  margin-top: 120px;
-  width: 100px;
-  border-radius: 60px;
+.feminino img:hover, .masculino img:hover{
+  background-color: #656060;
 }

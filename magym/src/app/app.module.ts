@@ -9,8 +9,10 @@ import { CadastroAlunoComponent } from './components/cadastro-aluno/cadastro-alu
 import { CadastroIntegranteApmComponent } from './components/cadastro-integrante-apm/cadastro-integrante-apm.component';
 import { ResetarSenhaComponent } from './components/resetar-senha/resetar-senha.component';
 import { CompraUniformesComponent } from './components/compra-uniformes/compra-uniformes.component';
-import { AluguelArmariosComponent } from './components/aluguel-armarios/aluguel-armarios.component';
 import { TelaInicialComponent } from './components/tela-inicial/tela-inicial.component';
+import { LocalArmarioComponent } from './components/local-armario/local-armario.component';
+import { AlugaArmarioOficinaMecanicaComponent } from './components/aluga-armario-oficina-mecanica/aluga-armario-oficina-mecanica.component';
+import { AlugaArmarioBatCavernaComponent } from './components/aluga-armario-bat-caverna/aluga-armario-bat-caverna.component';
 
 @NgModule({
   declarations: [
@@ -22,8 +24,10 @@ import { TelaInicialComponent } from './components/tela-inicial/tela-inicial.com
     CadastroIntegranteApmComponent,
     ResetarSenhaComponent,
     CompraUniformesComponent,
-    AluguelArmariosComponent,
     TelaInicialComponent,
+    LocalArmarioComponent,
+    AlugaArmarioOficinaMecanicaComponent,
+    AlugaArmarioBatCavernaComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
