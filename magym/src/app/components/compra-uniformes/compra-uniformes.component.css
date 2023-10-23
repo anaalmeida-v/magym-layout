@@ -1,14 +1,14 @@
 .pagina-uniforme {
   text-align: center;
+  font-weight: 600;
 }
 .inicio {
   /* background-image: url("../../../assets/aa.jpeg");
   background-size: cover; /* Isso dimensiona a imagem para preencher a seção */
-  background-color: #242424;
   background-repeat: no-repeat; /* Evita a repetição da imagem */
   background-position: center; /* Centraliza a imagem no elemento */
   height: 500px; /* Defina a altura desejada da seção */
-  color: #f6f6f6;
+  color: #242424;
 }
 @media (max-width: 970px) {
   .inicio {
@@ -28,8 +28,9 @@
   padding: 30px;
 }
 .carousel-ajuste {
-  color: #f6f6f6;
   height: 100vh;
+  font-weight: 600;
+  font-size: 20px;
 }
 #secao2 .imagens-uniforme {
   margin-top: 10vh;
@@ -44,12 +45,19 @@
 }
 #secao2,
 #secao3 {
-  background-color: #242424;
   padding-top: 20vh;
-}
-.feminino img, .masculino img{
-  background-color: #333333;
 }
 .feminino img:hover, .masculino img:hover{
   background-color: #656060;
+}
+.titulo-secao{
+  color: #d5342a;
+}
+.categoria{
+  border: 2px solid #242424;
+  width: 25vh;
+  padding: 5px;
+  background-color:#d5342a;
+  margin-left: 10px;
+  border-radius: 10px;
 }

@@ -1,7 +1,7 @@
 <div class="pagina-uniforme">
-  <nav class="navbar navbar-expand-lg navbar-light bg-light menu-padrao">
+  <nav class="navbar navbar-expand-lg menu-padrao">
     <div class="container-fluid">
-      <a class="navbar-brand" [routerLink]="['#inicio']">UNIFORMES</a>
+      <a class="navbar-brand uniformes" [routerLink]="['#inicio']">UNIFORMES</a>
       <button
         class="navbar-toggler"
         type="button"
@@ -46,30 +46,18 @@
     </div>
   </nav>
   <section class="inicio d-flex justify-content-center">
-      <div class="container align-self-center">
-        <h1>Escolha o uniforme de sua preferência:</h1>
-        <div class="row">
-          <div class="col-6 feminino">
-            <h4>FEMININO</h4>
-            <a href="#secao2"
-              ><img
-                class="imagens-uniforme"
-                src="../../../assets/icon-feminino.svg"
-                alt=""
-            /></a>
-          </div>
-          <div class="col-6 masculino">
-            <h4>MASCULINO</h4>
-            <a href="#secao3"
-              ><img
-                class="imagens-uniforme"
-                src="../../../assets/icon-masculino.svg"
-                alt=""
-            /></a>
-          </div>
-        </div>
+    <div class="container align-self-center">
+      <h1 class="mb-5">Escolha uma categoria:</h1>
+      <div class="row d-flex justify-content-center">
+        <div class="col-sm-12 col-md-1 categoria">Camiseta</div>
+        <div class="col-sm-12 col-md-1 categoria">Calça</div>
+        <div class="col-sm-12 col-md-1 categoria">Bermuda</div>
+        <div class="col-sm-12 col-md-1 categoria">Blusão</div>
+        <div class="col-sm-12 col-md-1 categoria">Jaleco</div>
+        <div class="col-sm-12 col-md-1 categoria">Óculos de proteção</div>
       </div>
-    </section>
+    </div>
+  </section>
   <section id="secao2">
     <div>
       <div id="carouselExampleIndicators" class="carousel slide">
@@ -92,6 +80,7 @@
         <div class="container align-self-center">
           <div class="carousel-inner carousel-ajuste">
             <div class="carousel-item active">
+              <div><h1 class="titulo-secao">UNIFORMES FEMININOS</h1></div>
               <div class="row">
                 <div class="col-sm-12 col-md-6">
                   <img
@@ -176,6 +165,7 @@
         <div class="container align-self-center">
           <div class="carousel-inner carousel-ajuste">
             <div class="carousel-item active">
+              <div><h1 class="titulo-secao">UNIFORMES MASCULINOS</h1></div>
               <div class="row">
                 <div class="col-sm-12 col-md-6">
                   <img
