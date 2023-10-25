@@ -13,6 +13,8 @@ import { TelaInicialComponent } from './components/tela-inicial/tela-inicial.com
 import { LocalArmarioComponent } from './components/local-armario/local-armario.component';
 import { AlugaArmarioOficinaMecanicaComponent } from './components/aluga-armario-oficina-mecanica/aluga-armario-oficina-mecanica.component';
 import { AlugaArmarioBatCavernaComponent } from './components/aluga-armario-bat-caverna/aluga-armario-bat-caverna.component';
+import { CamisetasComponent } from './components/camisetas/camisetas.component';
+import { CalcaFemininaComponent } from './components/calca-feminina/calca-feminina.component';
 
 @NgModule({
   declarations: [
@@ -28,9 +30,12 @@ import { AlugaArmarioBatCavernaComponent } from './components/aluga-armario-bat-
     LocalArmarioComponent,
     AlugaArmarioOficinaMecanicaComponent,
     AlugaArmarioBatCavernaComponent,
+    CamisetasComponent,
+    CalcaFemininaComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
 })
-export class AppModule {}
+export class AppModule {
+}

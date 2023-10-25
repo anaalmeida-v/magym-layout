@@ -11,12 +11,20 @@ import { ResetarSenhaComponent } from './components/resetar-senha/resetar-senha.
 import { TelaInicialComponent } from './components/tela-inicial/tela-inicial.component';
 import { LocalArmarioComponent } from './components/local-armario/local-armario.component';
 import { AlugaArmarioOficinaMecanicaComponent } from './components/aluga-armario-oficina-mecanica/aluga-armario-oficina-mecanica.component';
+import { CamisetasComponent } from './components/camisetas/camisetas.component';
+import { CalcaFemininaComponent } from './components/calca-feminina/calca-feminina.component';
 
 const routes: Routes = [
   { path: 'compra-uniformes', component: CompraUniformesComponent },
   { path: 'local-armario', component: LocalArmarioComponent },
-  { path: 'aluga-armario-bat-caverna', component: AlugaArmarioBatCavernaComponent },
-  { path: 'aluga-armario-oficina-mecanica', component: AlugaArmarioOficinaMecanicaComponent },
+  {
+    path: 'aluga-armario-bat-caverna',
+    component: AlugaArmarioBatCavernaComponent,
+  },
+  {
+    path: 'aluga-armario-oficina-mecanica',
+    component: AlugaArmarioOficinaMecanicaComponent,
+  },
   { path: 'usuario', component: UsuarioComponent },
   { path: 'login-aluno', component: LoginAlunoComponent },
   { path: 'login-integrante-apm', component: LoginIntegranteAPMComponent },
@@ -26,12 +34,13 @@ const routes: Routes = [
     component: CadastroIntegranteApmComponent,
   },
   { path: 'resetar-senha', component: ResetarSenhaComponent },
+  { path: 'uniformes/:id', component: CompraUniformesComponent },
+  { path: 'camisetas', component: CamisetasComponent },
+  { path: 'calca-feminina', component: CalcaFemininaComponent },
   { path: '', component: TelaInicialComponent },
 ];
 @NgModule({
-  imports: [
-    RouterModule.forRoot(routes),
-  ],
+  imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule],
 })
 export class AppRoutingModule {}

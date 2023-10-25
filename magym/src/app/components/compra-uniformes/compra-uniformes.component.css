@@ -1,8 +1,70 @@
+/**Padrao****/
 .pagina-uniforme {
   text-align: center;
   font-weight: 600;
   background-color: #f6f6f6;
 }
+
+/************MENU CATEGORIA*************/
+.secao1 {
+  height: 100vh;
+  border-bottom: 1px solid #b61e1e;
+  box-shadow: 0 7px 7px rgb(173, 15, 15);
+}
+
+.nav__submenu {
+  display: none;
+}
+
+.nav__menu-item:hover .nav__submenu {
+  display: block;
+}
+html {
+  box-sizing: border-box;
+}
+
+.nav2 ul {
+  list-style: none;
+  padding-left: 0;
+
+}
+
+.nav2 h1 {
+  width: 500px;
+  margin: 100px auto 20px;
+  color: #f0f0f0;
+  text-align: center;
+}
+
+.nav2 {
+  margin: 0 auto;
+  font-weight: 700;
+}
+
+.title {
+  margin-top: 20%;
+}
+
+.nav2 a {
+  display: block;
+  padding: 0 16px;
+  font-size: 16px;
+  color: #242424;
+  border: 4px solid #d5342a;
+  margin-left: 10px;
+  width: 200px;
+}
+
+.nav__menu {
+  line-height: 45px;
+  text-transform: uppercase;
+}
+
+.nav__menu-item {
+  display: inline-block;
+}
+
+/*****INICIO********/
 .inicio {
   /* background-image: url("../../../assets/aa.jpeg");
   background-size: cover; /* Isso dimensiona a imagem para preencher a seção */
@@ -11,6 +73,8 @@
   height: 500px; /* Defina a altura desejada da seção */
   color: #242424;
 }
+
+/*******SECAO FEMININA E MASCULINA*********/
 @media (max-width: 970px) {
   .inicio {
     height: 150vh;
@@ -24,12 +88,12 @@
 .imagens-uniforme {
   margin-top: 20px;
   width: 300px;
-  border: 1px solid #f6f6f6;
+  border: 1px solid #e1e1e1;
   border-radius: 10px;
   padding: 30px;
 }
 .carousel-ajuste {
-  height: 100vh;
+  height: 50vh;
   font-weight: 600;
   font-size: 20px;
 }
@@ -46,27 +110,16 @@
 }
 #secao2,
 #secao3 {
+  height: 100vh;
   padding-top: 20vh;
-}
-.feminino img:hover, .masculino img:hover{
-  background-color: #656060;
-}
-.titulo-secao{
-  color: #d5342a;
-}
-.categoria{
-  border: 2px solid #242424;
-  width: 25vh;
-  padding: 5px;
-  background-color:#d5342a;
-  margin-left: 10px;
-  border-radius: 10px;
+
+  border-bottom: 1px solid #b61e1e;
+  box-shadow: 0 7px 7px rgb(173, 15, 15);
 }
 .carousel {
   width: 400px;
   overflow: hidden;
 }
-
 .slide {
   display: inline-block;
   width: 100%;

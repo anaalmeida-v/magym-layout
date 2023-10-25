@@ -6,5 +6,5 @@ import { Component, OnInit, Output } from '@angular/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-title ='magym';
+  title = 'magym';
 }

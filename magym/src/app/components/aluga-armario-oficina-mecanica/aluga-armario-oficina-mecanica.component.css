@@ -1,0 +1,6 @@
+.image {
+  background-image: url("../../../assets/bat.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+}

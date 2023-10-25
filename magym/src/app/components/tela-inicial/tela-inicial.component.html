@@ -4,8 +4,8 @@
       <div class="titulo">
         <h1>Selecione o que deseja fazer:</h1>
       </div>
-      <div class="row">
-        <button class="btn">
+      <div class="row justify-content-center">
+        <button class="btn" [routerLink]="['compra-uniformes']">
           <div class="row">
             <div class="col-3">
               <img
@@ -14,11 +14,11 @@
                 alt=""
               />
             </div>
-            <div class="col-7"><p>COMPRAR UNIFORME</p></div>
+            <div class="col-7 mt-1"><p>COMPRAR UNIFORME</p></div>
           </div>
         </button>
 
-        <button class="btn">
+        <button class="btn" [routerLink]="['/local-armario']">
           <div class="row">
             <div class="col-3">
               <img
@@ -27,7 +27,7 @@
                 alt=""
               />
             </div>
-            <div class="col-7"><p>ALUGAR ARMÁRIO</p></div>
+            <div class="col-7 mt-1"><p>ALUGAR ARMÁRIO</p></div>
           </div>
         </button>
       </div>

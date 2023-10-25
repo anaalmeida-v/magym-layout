@@ -19,12 +19,11 @@
   align-self: end;
 }
 .item-inicio {
-  width: 50px;
+  width: 40px;
 }
 .btn {
-  width: 600px;
-  align-items: center;
-  align-items: center;
+  width: 500px;
+  height: 50px;
 }
 .item-inicio:hover {
   background-color: #ccc;

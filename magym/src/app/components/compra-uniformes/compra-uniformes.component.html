@@ -45,7 +45,53 @@
       </div>
     </div>
   </nav>
-  <section class="d-flex justify-content-center"></section>
+  <section class="justify-content-center secao1">
+    <h1 class="title">Categorias:</h1>
+    <nav class="nav2">
+      <ul class="nav__menu">
+        <li class="nav__menu-item">
+          <a [routerLink]="['/camisetas']">Camisetas</a
+          ><!--*(click)="uniformeClicado(1)"*-->
+        </li>
+        <li class="nav__menu-item">
+          <a href="#">Calças</a
+          ><!--*(click)="uniformeClicado(2)"*-->
+        </li>
+        <li class="nav__menu-item">
+          <a href="#">Bermudas</a
+          ><!--*(click)="uniformeClicado(2)"*-->
+        </li>
+        <li class="nav__menu-item">
+          <a href="#">Blusão</a
+          ><!--*(click)="uniformeClicado(2)"*-->
+        </li>
+        <li class="nav__menu-item">
+          <a href="#">Jaleco</a
+          ><!--*(click)="uniformeClicado(2)"*-->
+        </li>
+        <!-- Adicione eventos de clique para outras categorias -->
+      </ul>
+      <div *ngIf="uniformeSelecionado" class="uniforme-details">
+        <div
+          *ngFor="let uniforme of uniformes"
+          class="clothing-item"
+          (click)="showUniformDetail(uniforme)"
+        >
+          <ng-container *ngIf="uniforme.id === uniformeClicado">
+            <h3>{{ uniforme.peca_uniforme }}</h3>
+            <p>Preço: R$ {{ uniforme.preco | number : "1.2-2" }}</p>
+            <img
+              [src]="uniforme.foto_uniforme"
+              alt="{{ uniforme.peca_uniforme }}"
+              width="200"
+              height="200"
+            />
+          </ng-container>
+        </div>
+      </div>
+    </nav>
+  </section>
+
   <section id="secao2">
     <div>
       <div id="carouselExampleIndicators" class="carousel slide">
@@ -64,68 +110,73 @@
             data-bs-slide-to="1"
             aria-label="Slide 2"
           ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
         </div>
-        <div class="container align-self-center">
-          <div class="carousel-inner carousel-ajuste">
-            <div class="carousel-item active">
-              <div><h1 class="titulo-secao">UNIFORMES FEMININOS</h1></div>
-              <div class="row">
-                <div class="col-sm-12 col-md-6">
-                  <img
-                    src="../../../assets/calça-feminina.png"
-                    class="imagens-uniforme"
-                    alt=""
-                  />
-                  <p>CALÇA FEMININA</p>
-                </div>
-                <div class="col-sm-12 col-md-6">
-                  <img
-                    src="../../../assets/camiseta-preta-feminina.png"
-                    class="imagens-uniforme"
-                    alt=""
-                  />
-                  <p>CAMISETA (PRETA)</p>
-                </div>
+        <div><h1 class="titulo-secao">UNIFORMES FEMININOS</h1></div>
+        <div class="carousel-inner carousel-ajuste">
+          <div class="carousel-item active">
+            <div class="row">
+              <div class="col-sm-12 col-md-6">
+                <img
+                  [routerLink]="['/calca-feminina']"
+                  src="../../../assets/calça-feminina.png"
+                  class="imagens-uniforme"
+                  alt=""
+                />
+                <p>CALÇA FEMININA</p>
+              </div>
+              <div class="col-sm-12 col-md-6">
+                <img
+                  src="../../../assets/camiseta-preta-feminina.png"
+                  class="imagens-uniforme"
+                  alt=""
+                />
+                <p>CAMISETA (PRETA)</p>
               </div>
             </div>
-            <div class="carousel-item">
-              <div class="row">
-                <div class="col-sm-12 col-md-6">
-                  <img
-                    src="../../../assets/blusao-feminino.png"
-                    class="imagens-uniforme"
-                    alt=""
-                  />
-                  <p>BLUSÃO</p>
-                </div>
-                <div class="col-sm-12 col-md-6">
-                  <img
-                    src="../../../assets/bermuda-feminina.png"
-                    class="imagens-uniforme"
-                    alt=""
-                  />
-                  <p>BERMUDA FEMININA</p>
-                </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-sm-12 col-md-6">
+                <img
+                  src="../../../assets/blusao-feminino.png"
+                  class="imagens-uniforme"
+                  alt=""
+                />
+                <p>BLUSÃO</p>
+              </div>
+              <div class="col-sm-12 col-md-6">
+                <img
+                  src="../../../assets/bermuda-feminina.png"
+                  class="imagens-uniforme"
+                  alt=""
+                />
+                <p>BERMUDA FEMININA</p>
               </div>
             </div>
-            <div class="carousel-item">
-              <div class="row">
-                <div class="col-sm-12 col-md-6">
-                  <img
-                    src="../../../assets/camiseta-branca-feminina.png"
-                    class="imagens-uniforme"
-                    alt=""
-                  />
-                  <p>CAMISETA (BRANCA)</p>
-                </div>
-                <div class="col-sm-12 col-md-6">
-                  <img
-                    src="../../../assets/jaleco-frente.png"
-                    class="imagens-uniforme"
-                    alt=""
-                  />
-                  <p>JALECO</p>
-                </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-sm-12 col-md-6">
+                <img
+                  src="../../../assets/camiseta-branca-feminina.png"
+                  class="imagens-uniforme"
+                  alt=""
+                />
+                <p>CAMISETA (BRANCA)</p>
+              </div>
+              <div class="col-sm-12 col-md-6 jaleco">
+                <img
+                  src="../../../assets/jaleco-frente.png"
+                  class="imagens-uniforme"
+                  alt=""
+                />
+                <p>JALECO</p>
               </div>
             </div>
           </div>
@@ -136,7 +187,10 @@
           data-bs-target="#carouselExampleIndicators"
           data-bs-slide="prev"
         >
-          <span class="carousel-control-prev-icon bg-secondary" aria-hidden="true"></span>
+          <span
+            class="carousel-control-prev-icon bg-secondary"
+            aria-hidden="true"
+          ></span>
           <span class="visually-hidden">Previous</span>
         </button>
         <button
@@ -145,7 +199,10 @@
           data-bs-target="#carouselExampleIndicators"
           data-bs-slide="next"
         >
-          <span class="carousel-control-next-icon bg-secondary" aria-hidden="true"></span>
+          <span
+            class="carousel-control-next-icon bg-secondary"
+            aria-hidden="true"
+          ></span>
           <span class="visually-hidden">Next</span>
         </button>
       </div>
@@ -157,7 +214,7 @@
         <div class="carousel-indicators">
           <button
             type="button"
-            data-bs-target="#carouselExampleIndicator"
+            data-bs-target="#carouselExampleIndicators"
             data-bs-slide-to="0"
             class="active"
             aria-current="true"
@@ -165,52 +222,76 @@
           ></button>
           <button
             type="button"
-            data-bs-target="#carouselExampleIndicator"
+            data-bs-target="#carouselExampleIndicators"
             data-bs-slide-to="1"
             aria-label="Slide 2"
           ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
         </div>
-        <div class="container align-self-center">
-          <div class="carousel-inner carousel-ajuste">
-            <div class="carousel-item active">
-              <div><h1 class="titulo-secao">UNIFORMES MASCULINOS</h1></div>
-              <div class="row">
-                <div class="col-sm-12 col-md-6">
-                  <img
-                    src="../../../assets/camisa-uniforme.svg"
-                    class="imagens-uniforme"
-                    alt=""
-                  />
-                  <p>CALÇA FEMININA</p>
-                </div>
-                <div class="col-sm-12 col-md-6">
-                  <img
-                    src="../../../assets/camisa-uniforme.svg"
-                    class="imagens-uniforme"
-                    alt=""
-                  />
-                  <p>CAMISETA MASCULINA</p>
-                </div>
+        <div><h1 class="titulo-secao">UNIFORMES MASCULINOS</h1></div>
+        <div class="carousel-inner carousel-ajuste justify-content-center">
+          <div class="carousel-item active">
+            <div class="row">
+              <div class="col-sm-12 col-md-6">
+                <img
+                  src="../../../assets/calça-masculina.png"
+                  class="imagens-uniforme"
+                  alt=""
+                />
+                <p>CALÇA MASCULINA</p>
+              </div>
+              <div class="col-sm-12 col-md-6">
+                <img
+                  src="../../../assets/camiseta-branca-masculina.png"
+                  class="imagens-uniforme"
+                  alt=""
+                />
+                <p>CAMISETA (BRANCA)</p>
               </div>
             </div>
-            <div class="carousel-item">
-              <div class="row">
-                <div class="col-sm-12 col-md-6">
-                  <img
-                    src="../../../assets/camisa-uniforme.svg"
-                    class="imagens-uniforme"
-                    alt=""
-                  />
-                  <p>CALÇA MASCULINA</p>
-                </div>
-                <div class="col-sm-12 col-md-6">
-                  <img
-                    src="../../../assets/camisa-uniforme.svg"
-                    class="imagens-uniforme"
-                    alt=""
-                  />
-                  <p>BERMUDA FEMININA</p>
-                </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-sm-12 col-md-6">
+                <img
+                  src="../../../assets/bermuda-masculina.png"
+                  class="imagens-uniforme"
+                  alt=""
+                />
+                <p>BERMUDA MASCULINA</p>
+              </div>
+              <div class="col-sm-12 col-md-6">
+                <img
+                  src="../../../assets/blusao-masculino.png"
+                  class="imagens-uniforme"
+                  alt=""
+                />
+                <p>BLUSÃO</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-sm-12 col-md-6">
+                <img
+                  src="../../../assets/camiseta-preta-masculina.png"
+                  class="imagens-uniforme"
+                  alt=""
+                />
+                <p>CAMISETA (PRETA)</p>
+              </div>
+              <div class="col-sm-12 col-md-6 jaleco">
+                <img
+                  src="../../../assets/jaleco-frente.png"
+                  class="imagens-uniforme"
+                  alt=""
+                />
+                <p>JALECO</p>
               </div>
             </div>
           </div>
@@ -221,7 +302,10 @@
           data-bs-target="#carouselExampleIndicator"
           data-bs-slide="prev"
         >
-          <span class="carousel-control-prev-icon bg-secondary" aria-hidden="true"></span>
+          <span
+            class="carousel-control-prev-icon bg-secondary"
+            aria-hidden="true"
+          ></span>
           <span class="visually-hidden">Previous</span>
         </button>
         <button
@@ -230,7 +314,10 @@
           data-bs-target="#carouselExampleIndicator"
           data-bs-slide="next"
         >
-          <span class="carousel-control-next-icon bg-secondary" aria-hidden="true"></span>
+          <span
+            class="carousel-control-next-icon bg-secondary"
+            aria-hidden="true"
+          ></span>
           <span class="visually-hidden">Next</span>
         </button>
       </div>
