@@ -13,6 +13,7 @@ import { LocalArmarioComponent } from './components/local-armario/local-armario.
 import { AlugaArmarioOficinaMecanicaComponent } from './components/aluga-armario-oficina-mecanica/aluga-armario-oficina-mecanica.component';
 import { CamisetasComponent } from './components/camisetas/camisetas.component';
 import { CalcaFemininaComponent } from './components/calca-feminina/calca-feminina.component';
+import { CamisetaPretaComponent } from './components/camiseta-preta/camiseta-preta.component';
 
 const routes: Routes = [
   { path: 'compra-uniformes', component: CompraUniformesComponent },
@@ -37,6 +38,7 @@ const routes: Routes = [
   { path: 'uniformes/:id', component: CompraUniformesComponent },
   { path: 'camisetas', component: CamisetasComponent },
   { path: 'calca-feminina', component: CalcaFemininaComponent },
+  { path: 'camiseta-preta', component: CamisetaPretaComponent },
   { path: '', component: TelaInicialComponent },
 ];
 @NgModule({

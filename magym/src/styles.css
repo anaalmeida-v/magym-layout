@@ -113,7 +113,7 @@ input[type="checkbox"] {
   color: #f6f6f6;
   background-color: hsl(0, 0%, 14%);
   height: 100vh;
-  border-top: 2px solid #141313;
+  /*border-top: 2px solid #141313;*/
   padding-top: 5%;
 }
 
@@ -136,4 +136,12 @@ input[type="checkbox"] {
   width: 200px;
   margin-top: 20px;
   height: 40px;
+}
+
+.tamanhos{
+  border-radius: 10px;
+  margin-left: 1px;
+  border: 1px solid #242424;
+ background-color: #f6f6f6;
+ font-weight: 600;
 }

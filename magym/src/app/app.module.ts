@@ -15,6 +15,7 @@ import { AlugaArmarioOficinaMecanicaComponent } from './components/aluga-armario
 import { AlugaArmarioBatCavernaComponent } from './components/aluga-armario-bat-caverna/aluga-armario-bat-caverna.component';
 import { CamisetasComponent } from './components/camisetas/camisetas.component';
 import { CalcaFemininaComponent } from './components/calca-feminina/calca-feminina.component';
+import { CamisetaPretaComponent } from './components/camiseta-preta/camiseta-preta.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { CalcaFemininaComponent } from './components/calca-feminina/calca-femini
     AlugaArmarioBatCavernaComponent,
     CamisetasComponent,
     CalcaFemininaComponent,
+    CamisetaPretaComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
