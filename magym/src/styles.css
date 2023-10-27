@@ -67,8 +67,9 @@ input[type="checkbox"] {
     rgba(221, 221, 221, 1) 70%,
     rgba(246, 246, 246, 1) 100%
   );
-  font-size: 14x;
+  font-size: 16x;
   text-align: left;
+  font-weight: 700;
 }
 .menu a {
   color: #242424;
