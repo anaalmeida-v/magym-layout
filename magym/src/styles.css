@@ -20,6 +20,9 @@ label {
   font-size: 14px;
   margin-top: 10px;
 }
+a{
+  color: #f4594e;
+}
 
 input[type="checkbox"] {
   margin-top: 12px;
