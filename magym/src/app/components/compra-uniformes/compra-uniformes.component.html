@@ -50,16 +50,13 @@
     <nav class="nav2">
       <ul class="nav__menu">
         <li class="nav__menu-item">
-          <a [routerLink]="['/camisetas']">Camisetas</a
-          ><!--*(click)="uniformeClicado(1)"*-->
+          <a [routerLink]="['/camisetas']">Camisetas</a>
         </li>
         <li class="nav__menu-item">
-          <a href="#">Calças</a
-          ><!--*(click)="uniformeClicado(2)"*-->
+          <a>Calças</a>
         </li>
         <li class="nav__menu-item">
-          <a href="#">Bermudas</a
-          ><!--*(click)="uniformeClicado(2)"*-->
+          <a href="#">Bermudas</a>
         </li>
         <li class="nav__menu-item">
           <a href="#">Blusão</a
@@ -278,7 +275,8 @@
           <div class="carousel-item">
             <div class="row">
               <div class="col-sm-12 col-md-6">
-                <img [routerLink]="['/camiseta-preta']"
+                <img
+                  [routerLink]="['/camiseta-preta']"
                   src="../../../assets/camiseta-preta-masculina.png"
                   class="imagens-uniforme"
                   alt=""

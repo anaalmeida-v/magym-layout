@@ -16,7 +16,7 @@ export class CompraUniformesComponent {
       foto_uniforme: '../../../assets/camiseta-preta-masculina.png',
     },
     {
-      id: 1,
+      id: 10,
       peca_uniforme: 'Camiseta Branca',
       preco: 25.99,
       foto_uniforme: '../../../assets/camiseta-branca-feminina.png',
