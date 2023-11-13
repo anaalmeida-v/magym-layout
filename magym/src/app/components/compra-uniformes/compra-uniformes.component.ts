@@ -1,59 +1,34 @@
-import { Component } from '@angular/core';
-import { Router } from '@angular/router';
 import { CompraUniformes } from './compra-uniformes.model';
+import { Injectable } from '@angular/core';
+import { BehaviorSubject, Observable } from 'rxjs';
 
-@Component({
-  selector: 'app-compra-uniformes',
-  templateUrl: './compra-uniformes.component.html',
-  styleUrls: ['./compra-uniformes.component.css'],
+export interface Uniforme {
+  id: number;
+  nome: string;
+  categoria: string;
+  preco: number;
+}
+
+@Injectable({
+  providedIn: 'root',
 })
-export class CompraUniformesComponent {
-  uniformes: CompraUniformes[] = [
-    {
-      id: 1,
-      peca_uniforme: 'Camiseta Preta',
-      preco: 50.00,
-      foto_uniforme: '../../../assets/camiseta-preta-masculina.png',
-    },
-    {
-      id: 10,
-      peca_uniforme: 'Camiseta Branca',
-      preco: 25.99,
-      foto_uniforme: '../../../assets/camiseta-branca-feminina.png',
-    },
-    {
-      id: 2,
-      peca_uniforme: 'Calça Jeans',
-      preco: 49.99,
-      foto_uniforme: 'url_da_imagem_calca_jeans.jpg',
-    },
-    {
-      id: 2,
-      peca_uniforme: 'Calça Jeans',
-      preco: 49.99,
-      foto_uniforme: 'url_da_imagem_calca_jeans.jpg',
-    },
-    {
-      id: 2,
-      peca_uniforme: 'Calça Jeans',
-      preco: 49.99,
-      foto_uniforme: 'url_da_imagem_calca_jeans.jpg',
-    },
-    {
-      id: 2,
-      peca_uniforme: 'Calça Jeans',
-      preco: 49.99,
-      foto_uniforme: 'url_da_imagem_calca_jeans.jpg',
-    },
-    // Adicione mais uniformes aqui
-  ];
-  uniformeSelecionado: CompraUniformes | null = null;
-  uniformeClicado: number | null = null;
+export class CompraUniformes {
+  private uniformesSubject: BehaviorSubject<Uniforme[]> = new BehaviorSubject<
+    Uniforme[]
+  >([]);
+  uniformes$: Observable<Uniforme[]> = this.uniformesSubject.asObservable();
 
-  constructor(private router: Router) {}
+  constructor() {
+    this.initializeUniformes();
+  }
 
-  showUniformDetail(uniforme: CompraUniformes) {
-    this.uniformeSelecionado = uniforme;
-    this.uniformeClicado = uniforme.id;
+  private initializeUniformes(): void {
+    const uniformes: Uniforme[] = [
+      { id: 1, nome: 'Camiseta Azul', categoria: 'Camisetas', preco: 25.0 },
+      { id: 2, nome: 'Calça Preta', categoria: 'Calças', preco: 50.0 },
+      { id: 3, nome: 'Bermuda Jeans', categoria: 'Bermudas', preco: 35.0 },
+      // Adicione mais uniformes conforme necessário
+    ];
+    this.uniformesSubject.next(uniformes);
   }
 }

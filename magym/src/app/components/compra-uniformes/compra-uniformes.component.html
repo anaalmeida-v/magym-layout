@@ -50,43 +50,34 @@
     <nav class="nav2">
       <ul class="nav__menu">
         <li class="nav__menu-item">
-          <a [routerLink]="['/camisetas']">Camisetas</a>
+          <a (click)="categoriaClicada('Camisetas')">Camisetas</a>
         </li>
         <li class="nav__menu-item">
-          <a>Calças</a>
+          <a (click)="categoriaClicada('Calças')">Calças</a>
         </li>
         <li class="nav__menu-item">
-          <a href="#">Bermudas</a>
+          <a (click)="categoriaClicada('Bermudas')">Bermudas</a>
         </li>
         <li class="nav__menu-item">
-          <a href="#">Blusão</a
+          <a (click)="categoriaClicada('Blusão')">Blusão</a
           ><!--*(click)="uniformeClicado(2)"*-->
         </li>
         <li class="nav__menu-item">
-          <a href="#">Jaleco</a
+          <a (click)="categoriaClicada('Jaleco')">Jaleco</a
           ><!--*(click)="uniformeClicado(2)"*-->
         </li>
         <!-- Adicione eventos de clique para outras categorias -->
       </ul>
-      <div *ngIf="uniformeSelecionado" class="uniforme-details">
-        <div
-          *ngFor="let uniforme of uniformes"
-          class="clothing-item"
-          (click)="showUniformDetail(uniforme)"
-        >
-          <ng-container *ngIf="uniforme.id === uniformeClicado">
-            <h3>{{ uniforme.peca_uniforme }}</h3>
-            <p>Preço: R$ {{ uniforme.preco | number : "1.2-2" }}</p>
-            <img
-              [src]="uniforme.foto_uniforme"
-              alt="{{ uniforme.peca_uniforme }}"
-              width="200"
-              height="200"
-            />
-          </ng-container>
-        </div>
-      </div>
     </nav>
+  </section>
+
+  <section class="justify-content-center secao1">
+    <h1 class="title">CATEGORIAS</h1>
+    <app-categorias></app-categorias>
+  </section>
+
+  <section id="categorias">
+    <app-compra-uniforme [uniformes]="uniformes"></app-compra-uniforme>
   </section>
 
   <section id="secao2">

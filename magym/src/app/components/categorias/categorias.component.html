@@ -1,0 +1,7 @@
+<nav class="nav2">
+  <ul class="nav__menu">
+    <li *ngFor="let categoria of categorias" class="nav__menu-item">
+      <a (click)="categoriaClicada(categoria)">{{ categoria }}</a>
+    </li>
+  </ul>
+</nav>
