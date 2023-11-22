@@ -8,7 +8,6 @@ import { LoginIntegranteAPMComponent } from './components/login-integrante-apm/l
 import { CadastroAlunoComponent } from './components/cadastro-aluno/cadastro-aluno.component';
 import { CadastroIntegranteApmComponent } from './components/cadastro-integrante-apm/cadastro-integrante-apm.component';
 import { ResetarSenhaComponent } from './components/resetar-senha/resetar-senha.component';
-import { CompraUniformesComponent } from './components/compra-uniformes/compra-uniformes.component';
 import { TelaInicialComponent } from './components/tela-inicial/tela-inicial.component';
 import { LocalArmarioComponent } from './components/local-armario/local-armario.component';
 import { AlugaArmarioOficinaMecanicaComponent } from './components/aluga-armario-oficina-mecanica/aluga-armario-oficina-mecanica.component';
@@ -16,8 +15,7 @@ import { AlugaArmarioBatCavernaComponent } from './components/aluga-armario-bat-
 import { CamisetasComponent } from './components/camisetas/camisetas.component';
 import { CalcaFemininaComponent } from './components/calca-feminina/calca-feminina.component';
 import { CamisetaPretaComponent } from './components/camiseta-preta/camiseta-preta.component';
-import { CategoriasComponent } from './components/categorias/categorias.component';
-import { CategoriasServiceComponent } from './components/categorias.service/categorias.service.component';
+import { CompraUniformesComponent } from './components/compra-uniformes/compra-uniformes.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +26,6 @@ import { CategoriasServiceComponent } from './components/categorias.service/cate
     CadastroAlunoComponent,
     CadastroIntegranteApmComponent,
     ResetarSenhaComponent,
-    CompraUniformesComponent,
     TelaInicialComponent,
     LocalArmarioComponent,
     AlugaArmarioOficinaMecanicaComponent,
@@ -36,12 +33,10 @@ import { CategoriasServiceComponent } from './components/categorias.service/cate
     CamisetasComponent,
     CalcaFemininaComponent,
     CamisetaPretaComponent,
-    CategoriasComponent,
-    CategoriasServiceComponent,
+    CompraUniformesComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
 })
-export class AppModule {
-}
+export class AppModule {}

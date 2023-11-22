@@ -1,7 +1,7 @@
+import { CompraUniformesComponent } from './components/compra-uniformes/compra-uniformes.component';
 import { AlugaArmarioBatCavernaComponent } from './components/aluga-armario-bat-caverna/aluga-armario-bat-caverna.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { CompraUniformesComponent } from './components/compra-uniformes/compra-uniformes.component';
 import { UsuarioComponent } from './components/usuario/usuario.component';
 import { LoginAlunoComponent } from './components/login-aluno/login-aluno.component';
 import { LoginIntegranteAPMComponent } from './components/login-integrante-apm/login-integrante-apm.component';
@@ -35,7 +35,6 @@ const routes: Routes = [
     component: CadastroIntegranteApmComponent,
   },
   { path: 'resetar-senha', component: ResetarSenhaComponent },
-  { path: 'uniformes/:id', component: CompraUniformesComponent },
   { path: 'camisetas', component: CamisetasComponent },
   { path: 'calca-feminina', component: CalcaFemininaComponent },
   { path: 'camiseta-preta', component: CamisetaPretaComponent },
