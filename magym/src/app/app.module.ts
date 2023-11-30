@@ -1,9 +1,10 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { UsuarioComponent } from './components/usuario/usuario.component';
-import { LoginAlunoComponent } from './components/login-aluno/login-aluno.component';
+import { LoginAlunoModule } from './components/login-aluno/login-aluno.module';
 import { LoginIntegranteAPMComponent } from './components/login-integrante-apm/login-integrante-apm.component';
 import { CadastroAlunoComponent } from './components/cadastro-aluno/cadastro-aluno.component';
 import { CadastroIntegranteApmComponent } from './components/cadastro-integrante-apm/cadastro-integrante-apm.component';
@@ -21,7 +22,6 @@ import { CompraUniformesComponent } from './components/compra-uniformes/compra-u
   declarations: [
     AppComponent,
     UsuarioComponent,
-    LoginAlunoComponent,
     LoginIntegranteAPMComponent,
     CadastroAlunoComponent,
     CadastroIntegranteApmComponent,
@@ -35,7 +35,7 @@ import { CompraUniformesComponent } from './components/compra-uniformes/compra-u
     CamisetaPretaComponent,
     CompraUniformesComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, FormsModule, LoginAlunoModule],
   providers: [],
   bootstrap: [AppComponent],
 })

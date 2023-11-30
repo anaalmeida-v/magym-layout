@@ -1,5 +1,4 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { LoginAlunoComponent } from './login-aluno.component';
 
 describe('LoginAlunoComponent', () => {
@@ -8,9 +7,8 @@ describe('LoginAlunoComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ LoginAlunoComponent ]
-    })
-    .compileComponents();
+      declarations: [LoginAlunoComponent],
+    }).compileComponents();
 
     fixture = TestBed.createComponent(LoginAlunoComponent);
     component = fixture.componentInstance;

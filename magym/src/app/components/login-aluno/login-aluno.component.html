@@ -4,7 +4,14 @@
     <h4 class="mb-4">Aluno</h4>
     <div class="rm">
       <img class="icon" src="../../../assets/user_icon.svg" />
-      <input class="entradaDados" type="text" placeholder="Digite seu RM" />
+      <input
+        class="entradaDados"
+        type="text"
+        placeholder="Digite seu RM"
+        [(ngModel)]="loginInput"
+        (keydown)="handleKeyPress($event)"
+      />
+      <div *ngIf="erroLogin" class="mensagemErro">{{ erroLogin }}</div>
     </div>
     <div>
       <img class="icon" src="../../../assets/lock_icon.svg" />
@@ -19,7 +26,11 @@
         <a routerLink="../resetar-senha">Esqueci minha senha</a>
       </div>
     </div>
-    <button type="submit" class="btn">Login</button>
-  <p>Não possui conta? <a href="#" routerLink="/cadastro-aluno">Cadastre-se</a></p>
-</form>
+    <button type="submit" (click)="onSubmit(loginInput)" class="btn">
+      Login
+    </button>
+    <p>
+      Não possui conta? <a href="#" routerLink="/cadastro-aluno">Cadastre-se</a>
+    </p>
+  </form>
 </div>
