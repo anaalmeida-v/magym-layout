@@ -6,12 +6,11 @@
 }
 
 /************MENU CATEGORIA*************/
-.secao1{
+.secao1 {
   height: 60vh;
   border-bottom: 1px solid #b61e1e;
   box-shadow: 0 7px 7px rgb(173, 15, 15);
   color: #242424;
-  height: 50vh;
 }
 #secao2 {
   height: 100vh;
@@ -47,7 +46,7 @@ html {
 }
 
 .title {
-  margin-top: 20%;
+  margin-top: 30vh;
 }
 
 .nav2 a {
@@ -56,6 +55,7 @@ html {
   font-size: 16px;
   color: #242424;
   border: 4px solid #d5342a;
+  border-radius: 50px;
   margin-left: 10px;
   width: 200px;
 }
@@ -88,7 +88,7 @@ html {
   padding: 30px;
 }
 .carousel-ajuste {
-  height: 50vh;
+  height: 90vh;
   font-weight: 600;
   font-size: 20px;
 }
@@ -102,6 +102,9 @@ html {
   margin-top: 10vh;
   padding: 20px;
   border: none;
+}
+#secao3 p {
+  color: #f6f6f6;
 }
 .carousel {
   width: 700px;
@@ -124,4 +127,14 @@ html {
 
   height: 100vh;
   padding-top: 20vh;
+}
+.carousel-control-prev span,
+.carousel-control-next span {
+  border-radius: 50px;
+}
+.carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    width: 35px;
+  height: 20px;
+  margin: 30px;
 }

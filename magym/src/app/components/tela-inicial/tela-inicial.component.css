@@ -9,11 +9,7 @@
 }
 .titulo {
   padding-bottom: 100px;
-  padding-top: 25%;
-}
-.comprauniforme {
-  align-self: start;
-  margin: 0 10% 0 20%;
+  padding-top: 30vh;
 }
 .alugaarmario {
   align-self: end;
@@ -24,13 +20,10 @@
 .btn {
   width: 500px;
   height: 50px;
+  border-radius: 50px;
 }
 .item-inicio:hover {
   background-color: #ccc;
-}
-.paragrafoinicio {
-  padding-bottom: 10px;
-  padding-top: 25px;
 }
 a {
   font-weight: 600;
