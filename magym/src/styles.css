@@ -85,7 +85,9 @@ input[type="checkbox"] {
 }
 
 /*RODAPE***/
-
+.rodape{
+  width: 100%;
+}
 .icons-rodape {
   color: #fff;
   width: 40px;
