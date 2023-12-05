@@ -4,3 +4,21 @@
   background-position: center;
   height: 100vh;
 }
+* {
+  list-style-type: none;
+}
+.armario {
+  background-repeat: no-repeat;
+  background-image: url(../../../assets/armario.jpeg);
+  height: 125px;
+  width: 70px;
+  margin: 0 0 10px 0;
+}
+.coluna-armario {
+  height: 80vh;
+  margin-top: 10vh;
+  padding-left: 10px;
+}
+.conjunto-armarios{
+  padding-left: 10vh;
+}
