@@ -4,3 +4,9 @@
   background-position: center;
   height: 100vh;
 }
+a{
+  color: #000;
+}
+.titulo-aluguel{
+  padding-left: 20vh;
+}

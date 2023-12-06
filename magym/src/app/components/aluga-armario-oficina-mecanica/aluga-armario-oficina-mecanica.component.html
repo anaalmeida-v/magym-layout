@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg menu-padrao">
   <div class="container-fluid">
-    <a class="navbar-brand uniformes" routerLink="#inicio">ARMÁRIOS</a>
+    <a class="navbar-brand uniformes" routerLink="/local-armario">ARMÁRIOS</a>
     <button
       class="navbar-toggler"
       type="button"
@@ -45,110 +45,271 @@
   </div>
 </nav>
 
-<section class="m-0">
-  <div class="d-flex conjunto-armarios" style="overflow-y: auto">
+<section>
+  <div>
+    <h3 class="titulo-aluguel">
+      Alugue já seu armário perto da oficina de mecânica!
+    </h3>
+  </div>
+  <div><h4 class="titulo-escolha">Escolha um armário disponível</h4></div>
+  <div class="d-flex conjunto-armarios" style="overflow: auto">
     <ul class="coluna-armario">
-      <li (click)="(onArmarioClick)" class="armario ocupado" aria-label=""></li>
-      <li (click)="(onArmarioClick)" class="armario disponível"></li>
-      <li (click)="(onArmarioClick)" class="armario ocupado"></li>
-      <li (click)="(onArmarioClick)" class="armario ocupado"></li>
+      <li class="armario ocupado">
+        <label for="" class="numero-armario">329</label>
+      </li>
+      <li class="armario ocupado">
+        <label for="" class="numero-armario">330</label>
+      </li>
+      <li class="armario ocupado">
+        <label for="" class="numero-armario">331</label>
+      </li>
+      <li class="armario ocupado">
+        <label for="" class="numero-armario">332</label>
+      </li>
     </ul>
     <ul class="coluna-armario">
-      <li (click)="(onArmarioClick)" class="armario ocupado"></li>
-      <li (click)="(onArmarioClick)" class="armario ocupado"></li>
-      <li (click)="(onArmarioClick)" class="armario ocupado"></li>
-      <li (click)="(onArmarioClick)" class="armario disponível"></li>
+      <li class="armario ocupado">
+        <label for="" class="numero-armario">333</label>
+      </li>
+      <li class="armario ocupado">
+        <label for="" class="numero-armario">334</label>
+      </li>
+      <li class="armario ocupado">
+        <label for="" class="numero-armario">335</label>
+      </li>
+      <a href="" routerLink="/aluga-armario"><li class="armario disponível"><label for="" class="numero-armario">336</label>
+      </li></a>
     </ul>
     <ul class="coluna-armario">
-      <li (click)="(onArmarioClick)" class="armario ocupado"></li>
-      <li (click)="(onArmarioClick)" class="armario ocupado"></li>
-      <li (click)="(onArmarioClick)" class="armario ocupado"></li>
-      <li (click)="(onArmarioClick)" class="armario disponível"></li>
+      <li class="armario ocupado">
+        <label for="" class="numero-armario">337</label>
+      </li>
+      <li class="armario ocupado">
+        <label for="" class="numero-armario">338</label>
+      </li>
+      <li class="armario ocupado">
+        <label for="" class="numero-armario">339</label>
+      </li>
+      <a href="" routerLink="/aluga-armario"><li class="armario disponível"><label for="" class="numero-armario">336</label>
+
+      </li></a>
     </ul>
     <ul class="coluna-armario">
-      <li (click)="(onArmarioClick)" class="armario ocupado"></li>
-      <li (click)="(onArmarioClick)" class="armario ocupado"></li>
-      <li (click)="(onArmarioClick)" class="armario ocupado"></li>
-      <li class="armario ocupado"></li>
+      <li class="armario ocupado">
+        <label class="numero-armario" for="">341</label>
+      </li>
+      <li class="armario ocupado">
+        <label class="numero-armario" for="">342</label>
+      </li>
+      <li class="armario ocupado">
+        <label class="numero-armario" for="">343</label>
+      </li>
+      <li class="armario ocupado">
+        <label class="numero-armario" for="">344</label>
+      </li>
     </ul>
     <ul class="coluna-armario">
-      <li (click)="(onArmarioClick)" class="armario ocupado"></li>
-      <li (click)="(onArmarioClick)" class="armario ocupado"></li>
-      <li (click)="(onArmarioClick)" class="armario ocupado"></li>
-      <li (click)="(onArmarioClick)" class="armario ocupado"></li>
+      <li class="armario ocupado">
+        <label class="numero-armario" for="">345</label>
+      </li>
+      <li class="armario ocupado">
+        <label class="numero-armario" for="">346</label>
+      </li>
+      <li class="armario ocupado">
+        <label class="numero-armario" for="">347</label>
+      </li>
+      <li class="armario ocupado">
+        <label class="numero-armario" for="">348</label>
+      </li>
     </ul>
     <ul class="coluna-armario">
-      <li (click)="(onArmarioClick)" class="armario ocupado"></li>
-      <li (click)="(onArmarioClick)" class="armario ocupado"></li>
-      <li (click)="(onArmarioClick)" class="armario ocupado"></li>
-      <li (click)="(onArmarioClick)" class="armario ocupado"></li>
+      <li class="armario ocupado">
+        <label class="numero-armario" for="">321</label>
+      </li>
+      <li class="armario ocupado">
+        <label class="numero-armario" for="">322</label>
+      </li>
+      <li class="armario ocupado">
+        <label class="numero-armario" for="">323</label>
+      </li>
+      <li class="armario ocupado">
+        <label class="numero-armario" for="">324</label>
+      </li>
     </ul>
     <ul class="coluna-armario">
-      <li (click)="(onArmarioClick)" class="armario ocupado"></li>
-      <li (click)="(onArmarioClick)" class="armario ocupado"></li>
-      <li (click)="(onArmarioClick)" class="armario ocupado"></li>
-      <li (click)="(onArmarioClick)" class="armario ocupado"></li>
+      <li class="armario ocupado">
+        <label class="numero-armario" for="">325</label>
+      </li>
+      <li class="armario ocupado">
+        <label class="numero-armario" for="">326</label>
+      </li>
+      <li class="armario ocupado">
+        <label class="numero-armario" for="">327</label>
+      </li>
+      <li class="armario ocupado">
+        <label class="numero-armario" for="">328</label>
+      </li>
     </ul>
     <ul class="coluna-armario">
-      <li (click)="(onArmarioClick)" class="armario ocupado"></li>
-      <li (click)="(onArmarioClick)" class="armario disponível"></li>
-      <li (click)="(onArmarioClick)" class="armario ocupado"></li>
-      <li (click)="(onArmarioClick)" class="armario ocupado"></li>
+      <li class="armario ocupado">
+        <label class="numero-armario" for="">313</label>
+      </li>
+      <li class="armario ocupado">
+        <label for="" class="numero-armario">314</label>
+      </li>
+      <li class="armario ocupado">
+        <label for="" class="numero-armario">315</label>
+      </li>
+      <li class="armario ocupado">
+        <label class="numero-armario" for="">316</label>
+      </li>
     </ul>
     <ul class="coluna-armario">
-      <li (click)="(onArmarioClick)" class="armario ocupado"></li>
-      <li (click)="(onArmarioClick)" class="armario ocupado"></li>
-      <li (click)="(onArmarioClick)" class="armario ocupado"></li>
-      <li (click)="(onArmarioClick)" class="armario disponível"></li>
+      <li class="armario ocupado">
+        <label class="numero-armario" for="">317</label>
+      </li>
+      <li class="armario ocupado">
+        <label class="numero-armario" for="">318</label>
+      </li>
+      <li class="armario ocupado">
+        <label class="numero-armario" for="">319</label>
+      </li>
+      <a href="" routerLink="/aluga-armario"><li class="armario disponível"><label for="" class="numero-armario">320</label>
+
+      </li></a>
     </ul>
     <ul class="coluna-armario">
-      <li (click)="(onArmarioClick)" class="armario ocupado"></li>
-      <li (click)="(onArmarioClick)" class="armario ocupado"></li>
-      <li (click)="(onArmarioClick)" class="armario ocupado"></li>
-      <li (click)="(onArmarioClick)" class="armario ocupado"></li>
+      <li class="armario ocupado">
+        <label class="numero-armario" for="">305</label>
+      </li>
+      <li class="armario ocupado">
+        <label class="numero-armario" for="">306</label>
+      </li>
+      <li class="armario ocupado">
+        <label class="numero-armario" for="">307</label>
+      </li>
+      <li class="armario ocupado">
+        <label class="numero-armario" for="">308</label>
+      </li>
     </ul>
     <ul class="coluna-armario">
-      <li (click)="(onArmarioClick)" class="armario ocupado"></li>
-      <li (click)="(onArmarioClick)" class="armario ocupado"></li>
-      <li (click)="(onArmarioClick)" class="armario ocupado"></li>
-      <li (click)="(onArmarioClick)" class="armario ocupado"></li>
+      <li class="armario ocupado">
+        <label class="numero-armario" for="">309</label>
+      </li>
+      <li class="armario ocupado">
+        <label class="numero-armario" for="">310</label>
+      </li>
+      <li class="armario ocupado">
+        <label class="numero-armario" for="">311</label>
+      </li>
+      <li class="armario ocupado">
+        <label class="numero-armario" for="">312</label>
+      </li>
     </ul>
     <ul class="coluna-armario">
-      <li (click)="(onArmarioClick)" class="armario ocupado"></li>
-      <li (click)="(onArmarioClick)" class="armario ocupado"></li>
-      <li (click)="(onArmarioClick)" class="armario ocupado"></li>
-      <li (click)="(onArmarioClick)" class="armario ocupado"></li>
+      <li class="armario ocupado">
+        <label class="numero-armario" for="">297</label>
+      </li>
+      <li class="armario ocupado">
+        <label class="numero-armario" for="">298</label>
+      </li>
+      <li class="armario ocupado">
+        <label class="numero-armario" for="">299</label>
+      </li>
+      <li class="armario ocupado">
+        <label class="numero-armario" for="">300</label>
+      </li>
     </ul>
     <ul class="coluna-armario">
-      <li (click)="(onArmarioClick)" class="armario ocupado"></li>
-      <li (click)="(onArmarioClick)" class="armario ocupado"></li>
-      <li (click)="(onArmarioClick)" class="armario ocupado"></li>
-      <li (click)="(onArmarioClick)" class="armario ocupado"></li>
+      <li class="armario ocupado">
+        <label class="numero-armario" for="">301</label>
+      </li>
+      <li class="armario ocupado">
+        <label class="numero-armario" for="">302</label>
+      </li>
+      <li class="armario ocupado">
+        <label class="numero-armario" for="">303</label>
+      </li>
+      <li class="armario ocupado">
+        <label class="numero-armario" for="">304</label>
+      </li>
     </ul>
     <ul class="coluna-armario">
-      <li (click)="(onArmarioClick)" class="armario ocupado"></li>
-      <li (click)="(onArmarioClick)" class="armario ocupado"></li>
-      <li (click)="(onArmarioClick)" class="armario disponível"></li>
-      <li (click)="(onArmarioClick)" class="armario ocupado"></li>
+      <li class="armario ocupado">
+        <label class="numero-armario" for="">289</label>
+      </li>
+      <li class="armario ocupado">
+        <label class="numero-armario" for="">290</label>
+      </li>
+      <a href="" routerLink="/aluga-armario"><li class="armario disponível"><label for="" class="numero-armario">291</label>
+      </li></a>
+      <li class="armario ocupado">
+        <label class="numero-armario" for="">292</label>
+      </li>
     </ul>
     <ul class="coluna-armario">
-      <li (click)="(onArmarioClick)" class="armario"></li>
-      <li (click)="(onArmarioClick)" class="armario"></li>
-      <li (click)="(onArmarioClick)" class="armario"></li>
-      <li (click)="(onArmarioClick)" class="armario"></li>
+      <li class="armario ocupado">
+        <label class="numero-armario" for="">293</label>
+      </li>
+      <li class="armario ocupado">
+        <label class="numero-armario" for="">294</label>
+      </li>
+      <li class="armario ocupado">
+        <label class="numero-armario" for="">295</label>
+      </li>
+      <li class="armario ocupado">
+        <label class="numero-armario" for="">296</label>
+      </li>
     </ul>
     <ul class="coluna-armario">
-      <li (click)="(onArmarioClick)" class="armario"></li>
-      <li (click)="(onArmarioClick)" class="armario"></li>
-      <li (click)="(onArmarioClick)" class="armario"></li>
-      <li (click)="(onArmarioClick)" class="armario"></li>
+      <li class="armario ocupado">
+        <label class="numero-armario" for="">281</label>
+      </li>
+      <li class="armario ocupado">
+        <label class="numero-armario" for="">282</label>
+      </li>
+      <li class="armario ocupado">
+        <label class="numero-armario" for="">283</label>
+      </li>
+      <li class="armario ocupado">
+        <label class="numero-armario" for="">284</label>
+      </li>
     </ul>
     <ul class="coluna-armario">
-      <li (click)="(onArmarioClick)" class="armario"></li>
-      <li (click)="(onArmarioClick)" class="armario"></li>
-      <li (click)="(onArmarioClick)" class="armario"></li>
-      <li (click)="(onArmarioClick)" class="armario"></li>
+      <li class="armario ocupado">
+        <label class="numero-armario" for="">285</label>
+      </li>
+      <li class="armario ocupado">
+        <label class="numero-armario" for="">286</label>
+      </li>
+      <li class="armario ocupado">
+        <label class="numero-armario" for="">287</label>
+      </li>
+      <li class="armario ocupado">
+        <label class="numero-armario" for="">288</label>
+      </li>
     </ul>
+  </div>
+
+  <div class="p-5">
+    <div class="d-flex mb-2">
+      <img
+        src="../../../assets/verde.png"
+        width="28 "
+        height="28"
+        alt="disponivel"
+      />
+      <p style="font-weight: 600; margin: 2px 0px 0px 10px">Disponível</p>
+    </div>
+    <div class="d-flex">
+      <img
+        src="../../../assets/cinza.png"
+        width="30"
+        height="30"
+        alt="ocupado"
+      />
+      <p style="font-weight: 600; margin: 2px 0px 0px 10px">Ocupado</p>
+    </div>
   </div>
 </section>
 

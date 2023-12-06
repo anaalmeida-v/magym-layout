@@ -151,3 +151,46 @@ input[type="checkbox"] {
  background-color: #f6f6f6;
  font-weight: 600;
 }
+/**********ALUGUEL ARMARIOS************/
+.titulo-aluguel{
+  margin: 10vh 45vh 0 45vh;
+  padding: 0 5vh 0 7vh;
+  background-color: #d5342a;
+  border: 2px solid #242424;
+  border-radius: 50px;
+}
+.titulo-escolha{
+  padding-left: 80vh;
+  padding-top: 3%;
+}
+* {
+  list-style-type: none;
+}
+.armario {
+  height: 115px;
+  width: 55px;
+  margin-bottom: 10px;
+}
+.disponível{
+  background: #008000;
+}
+.disponível label, .disponível{
+  cursor: pointer;
+}
+.ocupado{
+  background: #ccc;
+}
+.armario:hover{
+  background-image: url(./assets/armario.jpeg);
+}
+.coluna-armario {
+  margin-top: 1%;
+  padding-left: 10px;
+}
+.conjunto-armarios  {
+  padding-left: 20vh;
+}
+.numero-armario{
+  padding-top: 5vh;
+  padding-left: 2vh;
+}

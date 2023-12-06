@@ -17,6 +17,7 @@ import { CamisetasComponent } from './components/camisetas/camisetas.component';
 import { CalcaFemininaComponent } from './components/calca-feminina/calca-feminina.component';
 import { CamisetaPretaComponent } from './components/camiseta-preta/camiseta-preta.component';
 import { CompraUniformesComponent } from './components/compra-uniformes/compra-uniformes.component';
+import { AlugaArmarioComponent } from './components/aluga-armario/aluga-armario.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import { CompraUniformesComponent } from './components/compra-uniformes/compra-u
     CalcaFemininaComponent,
     CamisetaPretaComponent,
     CompraUniformesComponent,
+    AlugaArmarioComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, LoginAlunoModule],
   providers: [],
