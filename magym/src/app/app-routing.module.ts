@@ -15,11 +15,13 @@ import { CamisetasComponent } from './components/camisetas/camisetas.component';
 import { CalcaFemininaComponent } from './components/calca-feminina/calca-feminina.component';
 import { CamisetaPretaComponent } from './components/camiseta-preta/camiseta-preta.component';
 import { AlugaArmarioComponent } from './components/aluga-armario/aluga-armario.component';
+import { CalcasComponent } from './components/calcas/calcas.component';
 
 const routes: Routes = [
   { path: 'compra-uniformes', component: CompraUniformesComponent },
   { path: 'local-armario', component: LocalArmarioComponent },
   { path: 'aluga-armario', component: AlugaArmarioComponent },
+  { path: 'calca', component: CalcasComponent },
   {
     path: 'aluga-armario-bat-caverna',
     component: AlugaArmarioBatCavernaComponent,
